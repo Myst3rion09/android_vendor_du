@@ -2,7 +2,8 @@
 PRODUCT_PACKAGES += \
     Turbo \
     Nova \
-    NovaGoogleCompanion
+    NovaGoogleCompanion \
+    GCam
 
 # Extra tools
 PRODUCT_PACKAGES += \
