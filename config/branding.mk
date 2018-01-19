@@ -11,10 +11,7 @@ ifeq ($(filter-out OFFICIAL WEEKLIES RC,$(DU_BUILD_TYPE)),)
         DU-Updater
 endif
 
-# Sign builds if building an official or weekly build
-ifeq ($(filter-out OFFICIAL WEEKLIES,$(DU_BUILD_TYPE)),)
-    PRODUCT_DEFAULT_DEV_CERTIFICATE := ../.keys/releasekey
-endif
+include vendor/du/config/keys.mk
 
 # Set all versions
 DATE := $(shell date -u +%Y%m%d)
