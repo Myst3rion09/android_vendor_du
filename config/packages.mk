@@ -1,6 +1,8 @@
 # Packages
 PRODUCT_PACKAGES += \
-    Turbo
+    Turbo \
+    Nova \
+    NovaGoogleCompanion
 
 # Extra tools
 PRODUCT_PACKAGES += \
